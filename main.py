@@ -15,8 +15,6 @@ DB_NAME = os.getenv('DB_NAME')
 
 GCS_BUCKET_NAME = os.getenv('GCS_BUCKET_NAME')
 
-print([DB_HOST, DB_USER, DB_NAME, GCS_BUCKET_NAME])
-
 # Ensure environment variables are set
 if not all([DB_HOST, DB_USER, DB_NAME, GCS_BUCKET_NAME]):
     print("Error: One or more environment variables are not set.")
